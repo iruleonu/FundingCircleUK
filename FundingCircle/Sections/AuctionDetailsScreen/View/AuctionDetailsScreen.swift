@@ -20,7 +20,8 @@ struct AuctionDetailsScreen : View {
                                       amountCents: self.viewModel[\.amountCents],
                                       term: self.viewModel[\.term],
                                       riskBand: self.viewModel[\.riskBand],
-                                      closeTime: self.viewModel[\.closeTime])
+                                      closeTime: self.viewModel[\.closeTime],
+                                      estimatedReturnAmount: self.viewModel[\.estimatedReturnAmount])
                     .frame(idealWidth: container.size.width, minHeight: 400, alignment: .top)
                 }.onAppear {
                     vm.onAppear()
@@ -36,6 +37,7 @@ struct ScrollViewContentView : View {
     @Binding var term: Int
     @Binding var riskBand: String
     @Binding var closeTime: String
+    @Binding var estimatedReturnAmount: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -92,6 +94,17 @@ struct ScrollViewContentView : View {
                     .lineLimit(2)
                     .font(.callout)
                 Text(closeTime)
+                    .color(.primary)
+                    .font(.footnote)
+                    .lineLimit(nil)
+            }
+            
+            HStack(alignment: .lastTextBaseline, spacing: 5) {
+                Text("Estimated return amount: ")
+                    .color(.primary)
+                    .lineLimit(2)
+                    .font(.callout)
+                Text(estimatedReturnAmount)
                     .color(.primary)
                     .font(.footnote)
                     .lineLimit(nil)
