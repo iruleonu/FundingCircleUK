@@ -29,6 +29,7 @@ final class AuctionDetailsScreenViewModel: BindableObject {
     var term: Int = 0
     var riskBand: String = ""
     var closeTime: String = ""
+    var estimatedReturnAmount: String = ""
     
     init(routing: AuctionDetailsRouting, auction: Auction) {
         self.routing = routing
@@ -47,5 +48,6 @@ final class AuctionDetailsScreenViewModel: BindableObject {
         term = auction.term
         riskBand = auction.riskBand
         closeTime = auction.closeTime.description
+        estimatedReturnAmount = "\(auction.era())"
     }
 }

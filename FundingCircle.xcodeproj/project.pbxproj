@@ -10,6 +10,7 @@
 		272D2B6E22B75EAB001B0781 /* AuctionDetailsScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D2B6D22B75EAB001B0781 /* AuctionDetailsScreenBuilder.swift */; };
 		272D2B7022B76164001B0781 /* AuctionsScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D2B6F22B76164001B0781 /* AuctionsScreenCoordinator.swift */; };
 		272D2B7222B7672B001B0781 /* AuctionDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D2B7122B7672B001B0781 /* AuctionDetailsCoordinator.swift */; };
+		278A1C2122DD463500328B22 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A1C2022DD463500328B22 /* AuctionTests.swift */; };
 		27B75C7322B6F9E60084BCCD /* AnySubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B75C7222B6F9E60084BCCD /* AnySubscription.swift */; };
 		27B75C7522B70EF50084BCCD /* AuctionsScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B75C7422B70EF50084BCCD /* AuctionsScreenBuilder.swift */; };
 		27B75C7722B70F8E0084BCCD /* AuctionsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B75C7622B70F8E0084BCCD /* AuctionsScreenView.swift */; };
@@ -64,6 +65,7 @@
 		272D2B6D22B75EAB001B0781 /* AuctionDetailsScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionDetailsScreenBuilder.swift; sourceTree = "<group>"; };
 		272D2B6F22B76164001B0781 /* AuctionsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsScreenCoordinator.swift; sourceTree = "<group>"; };
 		272D2B7122B7672B001B0781 /* AuctionDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionDetailsCoordinator.swift; sourceTree = "<group>"; };
+		278A1C2022DD463500328B22 /* AuctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		27B75C7222B6F9E60084BCCD /* AnySubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubscription.swift; sourceTree = "<group>"; };
 		27B75C7422B70EF50084BCCD /* AuctionsScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsScreenBuilder.swift; sourceTree = "<group>"; };
 		27B75C7622B70F8E0084BCCD /* AuctionsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionsScreenView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		27D7C56F22CC5461007287E1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				278A1C2022DD463500328B22 /* AuctionTests.swift */,
 				27D7C57022CC5461007287E1 /* JSON */,
 				27D7C58422CC58A4007287E1 /* Info.plist */,
 			);
@@ -555,6 +558,7 @@
 				27D7C57F22CC5461007287E1 /* Factory.swift in Sources */,
 				27D7C57E22CC5461007287E1 /* ResourceTests.swift in Sources */,
 				27D7C58122CC5461007287E1 /* AuctionsScreenViewModelTests.swift in Sources */,
+				278A1C2122DD463500328B22 /* AuctionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
